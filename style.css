@@ -1,0 +1,172 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 40px 50px 30px;
+  padding: 5px 5px 5px;
+  text-align: center;
+  background: white;
+}
+.menu li {display: inline-block;}
+.menu li:after {
+  content: "|";
+  color: blue;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu li:last-child:after {content: none;}
+.menu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.header {
+    text-align: center;
+    padding: 20px 5px;
+    width: 100%;
+    background-image: url(image.jpg);
+    background-size: 100%;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+ 
+.link {
+  font-size: 18px;
+  text-align: right;
+  text-decoration: underline;
+}
+
+
+form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    font-family: Gill Sans, sans-serif;
+} 
+
+#name {
+  border: 1px solid;
+  margin-left: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 125%;
+  font-family:"Segoe UI";
+}
+
+fieldset {
+  border: 0 none;
+  padding: 20px;
+}
+
+fieldset div {
+  margin: 4px 0;
+}
+
+input, textarea, select, .message2 {
+  font-size: 1em;
+  padding: 2px 1px 4px;
+  border: 0 none;
+  border-radius: 2px;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  padding: 5px;
+}
+
+label {
+  order: 1;
+  width: 10em;
+  padding-right: 0.5em;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+}
+
+input, textarea, select{
+  order: 2;
+  flex: 1 1 auto;
+}
+
+input[type="checkbox"], input[type="radio"], .message2 {
+
+  flex: none;
+  width: auto;
+  margin-left: 190px;
+}
+
+label{
+   display: flex;
+   justify-content: flex-start;
+}
+input{
+  width: auto;
+  }
+
+.logIn {
+  background: #DCDCDC;
+  color: black;
+  font-weight: 200;
+  font-size: 14px;
+  width: 50px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.info {
+  font-size: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.login, .password {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.message1, .message2, .message3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+a {
+  text-decoration-line: 1px;
+}
+
+.footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%; 
+    text-align: center;
+    padding: 20px; 
+
